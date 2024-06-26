@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+    /* overflow-x: hidden; */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.socialmedia {
+    display: flex;
+    justify-content: space-between;
+}
+.myproducts{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.changecurency{
+  margin: 3px;
+    border: none !important;
+}
+.modal.show{
+  
+    padding-top: 25% !important;
+}
+.card1 {
+  height: 300px;
+  width:100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.image1 img {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.subscribe1 {
+  flex: 1;
+  margin-left: 2rem;
+  color: black;
+}
+
+.subscribe1 p {
+  margin: 1rem 0;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.subscribe1 form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe1 input {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid #94949c;
+  background: transparent;
+  color: black;
+  font-weight: 300;
+}
+
+.subscribe1 button {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  outline: none;
+  margin-left: 0.5rem;
+  border: 1px solid #708090;
+  background-color: #708090;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.subscribe1 button:hover {
+  background: transparent;
+  color:#B76E79 ;
+}
+
+@media (max-width: 600px) {
+  /* télephone */
+  .productpromotion{
+    margin-top: 15%;
+  }
+  #infott{
+    margin-left: 10%
+  }
+  #phonebutt{
+    margin-left: 20%;
+  }
+  #productinfoo{
+    justify-content: center !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-top: 20px !important;
+  }
+  .img-fluid {
+    height: 400px !important;
+    width: 300px !important;
+    margin: 20px 0px 20px 49px !important;
+}
+  .steptow{
+    border: none;
+    box-shadow: 0 2px 4px rgb(139 31 31 / 36%);
+    display: flex;
+    justify-content: space-around;
+    width: 370px !important;
+    background: #70809038;
+    padding: 26px;
+}
+  .jewerllypro {
+    margin-bottom: 10px !important;
+}
+#offsp {
+  background-color: rgba(0,0,0,.5) o !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  top: 30% !important;
+}
+
+.promotion{
+  background-color: white !important;
+  margin: 18px 0px 17px 0px !important;
+  height: auto !important;
+  display: block;
+  margin: 18px 0 17px!important;
+}
+  .image1 {
+    width: 30% !important;
+}
+#title3{
+  font-size: calc(1rem + .6vw) !important;
+}
+#category{
+  margin: 18px 0px 17px 0px !important;
+}
+#oneHomeCard{
+  margin: 16px !important;
+}
+#thisRow{
+  margin-left: calc(var(--bs-gutter-x)*-.5) none !important;
+    margin-right: calc(var(--bs-gutter-x)*-.5) none !important;
+}
+#shopbutt{
+  background-color: #708090;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  left: 50%;
+  padding: 10px 20px;
+  position: absolute !important;
+  top: 50% !important;
+  -webkit-transform: translate(-50%,-50%) !important;
+  transform: translate(-50%,-50%) !important;
+  bottom: auto !important;
+}
+}
+
+@media (min-width: 600px) {
+
+  /* web */
+  /* .productpromotion{
+    margin-top: 33%;
+  } */
+ 
+  #productinfoo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .promotion {
+    background-color: white !important;
+    margin: 18px 0 17px!important;
+}
+  #category{
+    margin-top: 10px !important;
+  }
+  .image1 {
+    width: 450px !important;
+}
+.steptow{
+  border: none;
+  box-shadow: 0 2px 4px rgb(139 31 31 / 36%);
+  display: flex;
+  justify-content: space-around;
+  margin: 22px;
+  width: 700px;
+  background: #70809038;
+  padding: 26px;
+}
+#shopbutt{
+  background-color: #708090;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  left: 50%;
+  padding: 10px 20px;
+  position: absolute !important;
+  top: 57%!important ;
+  -webkit-transform: translate(-50%,-50%) !important;
+  transform: translate(-50%,-50%) !important;
+  bottom: auto !important;
+}
+ 
+}
+.carousel .thumb img {
+  height: 100px !important;
+}
+.carousel .thumbs {
+  justify-content: center;
+  display: flex;
+}
+
+#promo{
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  padding-top: 5%;
+  color: black;
+  box-shadow: 10px 12px 13px;
+}
+.mycardshome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 25px 0; */
+  /* background: #B76E79; */
+  box-shadow: 10px 5px 5px #708090;
+  padding: 10px;
+}
+#carousa{
+  margin: 20px;
+}
+.w-100 {
+
+  height: 400px;
+}
+
+.MuiCardContent-root.css-1qw96cp {
+  width: 180px !important;
+}
+.jewerllypro{
+  
+color: black;
+font-size: 90px;
+border: solid 1px black;
+width: 140px;
+height: 188px;
+padding: 24px;
+cursor: pointer;
+
+}
+.jewerllyicons{
+  margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.jewerllypro:hover{
+  margin-top: -15px;
+   color: #bb5644;
+}
+#oneHomeCard{
+  margin-bottom: 10px;
+}
+#offsp{
+  position: absolute; 
+  top: 50%;
+   left: 50%;
+    transform: translate(-50%, -50%);
+     background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+       padding: 10px;
+        font-size: 18px; 
+        font-weight: bold;
+}
+#pep{
+  color: #708090;
+  box-shadow: 10px 5px 5px #B76E79;
+  justify-content: center;
+  display: flex;
+  font-weight: 900;
+  font-family: revert;
+  height: 50px;
+  padding: 5px;
+}
+.footer{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+  width: 100%;
+}
+.socialmedia{
+  display: flex;
+  justify-content: space-around;
+  color: white !important;
+}
+.payment-methods{
+  width: 220px ;
+  display: flex;
+  justify-content: space-around;
+}
+.payment-methods img{
+  width: 65px!important; ;
+}
+.imagepay{
+  margin-right: 15px;
+}
+.socialmmmm{
+  color: white !important;
+}
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.product-table tr:hover {
+  background-color: #ddd;
+}
+
+.payment-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.payment-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.category:hover{
+  color: #B76E79 !important;
+  
+}
+.categorytitle{
+  font-family: monospace !important;
+    font-weight: 900 !important;
+}
+.category{
+  font-family: initial !important;
+  font-weight: 600 !important;
+}
+#price{
+  display: flex;
+  justify-content: space-around;
+}
+#harmony{
+  display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+    font-family: auto;
+}
+.harmmonystyle{
+  margin: 8px;
+}
+@media screen and (min-width: 1024px) {
+  #harmony {
+    font-size: 150px; /* Font size for PC screens (adjust as needed) */
+  }
+
+  .harmmonystyle {
+    margin: 30px; /* Margin for PC screens (adjust as needed) */
+  }
+}
+img.socialimage {
+  width: 70px;
+}
+.row {
+  --bs-gutter-x: none !important;
+}
