@@ -1,10 +1,9 @@
 const mysql = require("mysql2");
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  // port: 5600,
-  password: 'root',
-  // "$Said123456"
+  host: "165.227.156.128",
+  user: "said",
+  port: 5500,
+  password: '$Said123456',
   database: "harmonystore_db",
 });
 

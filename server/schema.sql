@@ -1,5 +1,5 @@
--- DROP DATABASE IF EXISTS harmonystore_db;
--- CREATE DATABASE IF NOT EXISTS harmonystore_db;
+DROP DATABASE IF EXISTS harmonystore_db;
+CREATE DATABASE IF NOT EXISTS harmonystore_db;
 USE harmonystore_db;
 
 
