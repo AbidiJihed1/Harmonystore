@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 export const register = (data,handleNext,navigate) => async (dispatch) => {
     try {
         if(data.next===false){
-            await axios.post('https://www.harmonystore01.com/api/Create_user', data).then((res)=>{
+            await axios.post('http://165.227.156.128/api/Create_user', data).then((res)=>{
                 if (res.data === "user exist") {
                       Swal.fire({
                         icon: "error",
@@ -23,7 +23,7 @@ export const register = (data,handleNext,navigate) => async (dispatch) => {
                     }
             })
         }else{
-            await axios.post('https://www.harmonystore01.com/api/Create_user', data).then((res)=>{
+            await axios.post('http://165.227.156.128/api/Create_user', data).then((res)=>{
             if (res.data === "user exist") {
                   Swal.fire({
                     icon: "error",
@@ -43,7 +43,7 @@ export const register = (data,handleNext,navigate) => async (dispatch) => {
 }
 export const login = (data, navigate) => async (dispatch) => {
     try {
-        await axios.post('https://www.harmonystore01.com/api/login', data).then((res)=>{
+        await axios.post('http://165.227.156.128/api/login', data).then((res)=>{
         if(res.data.msg==="secsuss"){
             dispatch({ type: LOGIN, payload: res.data })
            
@@ -69,7 +69,7 @@ export const login = (data, navigate) => async (dispatch) => {
 export const get_current = (id) => async (dispatch) => {
     const config = { headers: { token: localStorage.getItem("token") } }
     try {
-        await axios.get('https://www.harmonystore01.com/api/getone_user/'+id, config).then((res)=>{
+        await axios.get('http://165.227.156.128/api/getone_user/'+id, config).then((res)=>{
             dispatch({ type: GET_CURRENT, payload:res.data[0] })
 
         })
@@ -80,7 +80,7 @@ export const get_current = (id) => async (dispatch) => {
 export const update_current_user = (id,data,handleNext) => async (dispatch) => {
     // const config = { headers: { token: localStorage.getItem("token") } }
     try {
-        await axios.put('https://www.harmonystore01.com/api/update_user/'+id,data).then((res)=>{
+        await axios.put('http://165.227.156.128/api/update_user/'+id,data).then((res)=>{
         if(res.data.message=="User updated successfully."){
         dispatch(get_current(id),handleNext())
        }else{
@@ -108,7 +108,7 @@ export const forgotPassword = (email) => async (dispatch) => {
         }
 
         const { data } = await axios.post(
-            'https://www.harmonystore01.com/request-password-reset',
+            'http://165.227.156.128/request-password-reset',
             email,
             config
         );
@@ -139,7 +139,7 @@ export const resetPassword = (token, newPassword, confirmPassword) => async (dis
         }
 
         const { data } = await axios.put(
-            `https://www.harmonystore01.com/api/password/reset/${token}`,
+            `http://165.227.156.128/api/password/reset/${token}`,
             {newPassword, confirmPassword},
             config
         );

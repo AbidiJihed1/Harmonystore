@@ -55,7 +55,7 @@ export default function StepThreeMakePayment() {
  const handelorder=(paymenttype)=>{
   const id=localStorage.getItem('id')
   const data=JSON.parse(localStorage.getItem('cart'))
-  axios.post('https://www.harmonystore01.com/api/createOrderItems',{data,liverison:delevrycharge*exchangeRate,paymenttype,id})
+  axios.post('http://165.227.156.128/api/createOrderItems',{data,liverison:delevrycharge*exchangeRate,paymenttype,id})
   .then((res)=>{
     if(res.data.message==="Order items and orders created successfully"){
       Swal.fire({
@@ -80,7 +80,7 @@ export default function StepThreeMakePayment() {
   const data=JSON.parse(localStorage.getItem('cart'))
     try {
       await axios
-        .post('https://www.harmonystore01.com/payments/payment', {
+        .post('http://165.227.156.128/payments/payment', {
           receiverWalletId: receiverWalletId || WALLET_ID,
           token: token,
           amount: amount,
