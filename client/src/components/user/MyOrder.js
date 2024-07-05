@@ -7,7 +7,7 @@ export default function MyOrder() {
 
   useEffect(() => {
     const id = localStorage.getItem('id');
-    axios.get('http://165.227.156.128/api/get_user_order/' + id)
+    axios.get('https://www.harmonystore01.com/api/get_user_order/' + id)
       .then((res) => {
         setOrder(res.data);
       });

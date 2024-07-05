@@ -66,7 +66,7 @@ function ProfilePage() {
   }, [dispatch]);
   const user=useSelector((state)=>state.UserReducer.users)
   const logout = () => {
-    axios.get("http://165.227.156.128/api/logout").then((res) => {
+    axios.get("https://www.harmonystore01.com/api/logout").then((res) => {
       if (res.data === "user loged out") {
         localStorage.clear();
         window.location.reload();

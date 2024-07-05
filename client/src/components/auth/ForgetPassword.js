@@ -26,7 +26,7 @@ function ForgetPassword() {
 
     // Make an API call to request a password reset email
     axios
-      .post('http://165.227.156.128/request-password-reset', { email }) // Adjust the API endpoint accordingly
+      .post('https://www.harmonystore01.com/request-password-reset', { email }) // Adjust the API endpoint accordingly
       .then((response) => {
         // Assuming your server returns a success message with the reset token
         if (response.status === 200) {

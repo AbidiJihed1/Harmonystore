@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "gmail", // Replace with your email provider
   port: 587,
-  host: 'http://165.227.156.128/',
+  host: 'https://www.harmonystore01.com',
   secure: false,
   auth: {
     user: "abidij55@gmail.com",

@@ -45,7 +45,7 @@ const [search,setSearch]=useState("")
   const search = e.target.value;
   setSearch(search);
 
-  axios.get(`http://165.227.156.128/api/search?q=${search}`)
+  axios.get(`https://www.harmonystore01.com/api/search?q=${search}`)
   .then((response) => {
 
     setSearchResults(response.data);

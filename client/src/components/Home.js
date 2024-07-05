@@ -26,7 +26,7 @@ export default function Home({ products, getlen, search }) {
   });
   const hadelsuscribe = () => {
     axios
-      .post("http://165.227.156.128/api/newsletter", { Email: Email })
+      .post("https://www.harmonystore01.com/api/newsletter", { Email: Email })
       .then((res) => {
         if (res.data === "user subscribe") {
           Swal.fire({
