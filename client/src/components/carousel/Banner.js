@@ -4,7 +4,7 @@ import viedo from './banner.mp4'
 const VideoBanner = () => {
   return (
     <div className="video-banner">
-      <video autoPlay loop muted>
+      <video autoPlay loop>
         <source src={viedo} type="video/mp4" />
       </video>
       <div className="overlay"></div>
